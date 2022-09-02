@@ -1,0 +1,227 @@
+html * {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  background-color: rgb(154,149,157);
+}
+
+h1, h2, h3, h4, h5, p {
+    text-align: center;
+    text-shadow: #40424a;
+    
+}
+h1 {
+  color: rgb(64,41,67);
+}
+
+h2 {
+  color: rgb(56,64,77);
+}
+
+/* Navigation Bar */
+.header {
+  overflow: hidden;
+  background-color: rgb(56,64,77);
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: rgb(225,207,186);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: rgb(154,149,157);
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: rgb(64,41,67);
+  color: rgb(225,207,186);
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* When the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/* Table and Size Image Display */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: large;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: large;
+}
+
+.sizes {
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.display {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+/* Slideshow Display */
+.mySlides {
+  display: none;
+  align-items: center;
+}
+
+.slideshow {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Gallery Display */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Setting Up Grid */
+.grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* Styling photos in the grid */
+.grid-item {
+  min-width: 250px;
+  max-width: 250px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+  min-height: 100vh;
+  padding: 2rem 0;
+  background: #40424a;
+  color: #e4e4e8;
+  text-align: center;
+}
+.wrapper h2 {
+    font-size: 2.125em;
+    line-height: 1.5;
+    clear: both;
+    margin-bottom: 0;
+    padding-top: 2em;
+    margin-top: 0;
+}
+.wrapper p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #c4c4c8;
+    margin-top: 0;
+}
+
+.grid-item figure {
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.05);
+}
+.grid-item figure img {
+  display: block;
+  max-width: 100%;
+}
+.grid-item figcaption {
+  display: block;
+  padding: .625rem .5rem;
+  background: rgb(159, 157, 164);
+  color: rgb(46, 52, 63);
+  opacity: 70%;
+}
+
+
+
+  /* Form Display */
+  .form {
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 20%;
+    background-color: rgb(64,41,67);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(137,130,156);
+  }
+
+  /* Message Box */
+  textarea {
+    width: 30%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
